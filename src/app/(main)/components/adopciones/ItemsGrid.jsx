@@ -1,5 +1,5 @@
 'use client'
-import { getProducts } from '@/DAO/products.db';
+import { getActiveAdoptions } from '@/DAO/adoptions.db';
 import React, { useEffect, useState } from 'react'
 
 export const ItemsGrid = () => {
@@ -10,7 +10,7 @@ export const ItemsGrid = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const resData = await getProducts()
+        const resData = await getActiveAdoptions()
         setData(resData)
       } catch (error) {
         console.error('Error fetching products:', error)
