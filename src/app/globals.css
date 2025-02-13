@@ -10,6 +10,7 @@
   --primary: #00638C;
   --primary2: #C6EAFF;
   --secondary: #D98729;
+  --input: #87b6cb;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -144,4 +145,20 @@ body {
 
 .socialAnimated:hover {
   transform: scale(1.1);
+}
+
+.text-h2 {
+  @apply text-h2-m lg:text-h2-w;
+}
+
+.text-h3 {
+  @apply text-h3-m lg:text-h3-w font-semibold;
+}
+
+.text-p2 {
+  @apply text-p2-m lg:text-p2-w;
+}
+
+.text-p3 {
+  @apply text-p3-m lg:text-p3-w;
 }
